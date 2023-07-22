@@ -1,4 +1,14 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 40px;
+  li {
+    width: 306px;
+    &:last-child {
+      width: 196px;
+      text-align: right;
+    }
+  }
 }
