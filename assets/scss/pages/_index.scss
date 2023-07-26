@@ -54,8 +54,14 @@ table {
    License: none (public domain)
 */
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
 
 
+img {
+  vertical-align: middle;
+}
 
 body {
   font-family: 'Bruno Ace SC', cursive;
@@ -66,4 +72,193 @@ body {
 .container {
   width: 1296px;
   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.vision {
+  display: flex;
+  padding: 72px 0;
+  img {
+    margin-right: 24px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding: 12px 52px 12px 24px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  text-decoration: none;
+  background-image: url("../images/arrow_outward.png");
+  background-repeat: no-repeat;
+  background-position: top 17px right 30px;
+  &.btn-black {
+    background-color: #000000;
+    color: #FFFFFF;
+    background-image: url("../images/arrow_outward_white.png");
+  }
+}
+
+.vision-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  h1 {
+    font-size: 64px;
+    line-height: 96px;
+    
+  }
+  .name {
+    font-size: 128px;
+    line-height: 192px;
+    color: #00FFA3;
+    margin-left: auto;
+  }
+  .btn {
+    margin-left: auto;
+  }
+}
+
+.intro-wrap {
+  background-image: url("../images/Rectangle 7.png");
+  padding: 160px 0;
+}
+
+.intro {
+  display: flex;
+  > img {
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.intro-content, .about-content, .contact, .project-content {
+  h2 {
+    font-size: 64px;
+    line-height: 96px;
+    margin-bottom: 36px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  width: 526px;
+  margin-right: 24px;
+  img {
+    width: 128px;
+    height: 98px;
+  }
+}
+
+.about-wrap, .project-wrap {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 160px 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 636px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  li {
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    width: calc(50% - 46px);
+    &:nth-child(2), &:nth-child(4) {
+      margin-right: 0;
+    }
+    span {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.about-content {
+  width: 526px;
+}
+
+.contact-wrap {
+  background-image: linear-gradient(0deg, #01021E 89%, #050014 100%);
+  padding: 96px 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    background-image: url("../images/trending_flat_black_24dp\ 1.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 116px;
+    margin-right: 113px;
+    margin-bottom: 0;
+  }
+  img {
+    width: 162px;
+    height: 162px;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+}
+
+.project {
+  display: flex;
+  align-items: flex-end;
+}
+
+.project-content {
+  h2 {
+    width: 746px;
+    margin-bottom: 16px;
+    margin-left: auto;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .btn {
+    margin-right: auto;
+  }
 }
